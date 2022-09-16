@@ -1,0 +1,62 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.bot {
+    align-content: center;
+}
+.uno {
+    background-color: tomato;
+    text-align: center;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-size: 70px;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.dos {
+    background-color:aqua;
+    text-align: center;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-size: 70px;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.tres {
+    background-color:blue;
+    text-align: center;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-size: 70px;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.cuatro {
+    background-color:black;
+    text-align: center;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-size: 70px;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.varBoton {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    padding: 10px 20px;
+    margin: 10px;
+
+    color: #FFFFFF;
+
+    background: #E74F5C;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 54px;
+    border: 0;
+}
