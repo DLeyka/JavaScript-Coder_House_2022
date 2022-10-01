@@ -17,31 +17,37 @@
 //     document.body.apped
 // });
 
+let carritoStorage = [];
+// Guardar en el carrito
+localStorage.setItem ("carritoStorage", JSON.stringify(carritoStorage));
+//Mostrar en el local storsge
+carritoStorage = localStorage.getItem('carritoStorage') || [];
+
 // Variables
 const baseDeDatos = [
     {
         id: 1,
         nombre: 'Gatlate',
         precio: 50,
-        imagen: 'patata.jpg'
+        imagen: 'img3.jpg'
     },
     {
         id: 2,
         nombre: 'Cocoperr',
         precio: 100,
-        imagen: 'cebolla.jpg'
+        imagen: 'img4.jpg'
     },
     {
         id: 3,
         nombre: 'Cotorros',
         precio: 150,
-        imagen: 'calabacin.jpg'
+        imagen: 'img11.jpg'
     },
     {
         id: 4,
         nombre: 'Pan-da',
         precio: 35,
-        imagen: 'fresas.jpg'
+        imagen: 'img2.jpg'
     }
 
 ];
@@ -59,8 +65,17 @@ const DOMbotonVaciar = document.querySelector('#boton-vaciar');
  * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito
  */
 function renderizarProductos() {
+    let card = document.getElementById("items");
     baseDeDatos.forEach((info) => {
-        // Estructura
+        const contenido = `
+        <figure>
+        <img src="imagen: ${info.imagen}" class="card-img-top" alt="${info.nombre}">
+        <figcaption class="card__figcaption">${info.nombre}</figcaption>
+        </figure>
+        <p class="card__p"> ${info.precio}</p>
+        <buttom class="card__a">+</buttom>`
+        
+        /* // Estructura
         const miNodo = document.createElement('div');
         miNodo.classList.add('card', 'col-sm-4');
         // Body
@@ -77,9 +92,9 @@ function renderizarProductos() {
         // Precio
         const miNodoPrecio = document.createElement('p');
         miNodoPrecio.classList.add('card-text');
-        miNodoPrecio.textContent = `${info.precio}${divisa}`;
+        miNodoPrecio.textContent = `${info.precio}${divisa}`; */
         // Boton 
-        const miNodoBoton = document.createElement('button');
+        /* const miNodoBoton = document.createElement('button');
         miNodoBoton.classList.add('btn', 'btn-primary');
         miNodoBoton.textContent = '+';
         miNodoBoton.setAttribute('marcador', info.id);
@@ -90,16 +105,21 @@ function renderizarProductos() {
         miNodoCardBody.appendChild(miNodoPrecio);
         miNodoCardBody.appendChild(miNodoBoton);
         miNodo.appendChild(miNodoCardBody);
-        DOMitems.appendChild(miNodo);
+        DOMitems.appendChild(miNodo); */Ñ
+        card.innerHTML = contenido;
+        return card;
     });
 }
+
+renderizarProductos();
 
 /**
  * Evento para añadir un producto al carrito de la compra
  */
 function anyadirProductoAlCarrito(evento) {
-    // Anyadimos el Nodo a nuestro carrito
+    // Anyadimos el Nodo a nuestro carrito}
     carrito.push(evento.target.getAttribute('marcador'))
+    localStorage.setItem("carritoStorage", carritoStorage);
     // Actualizamos el carrito 
     renderizarCarrito();
 
@@ -189,4 +209,5 @@ DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 // Inicio
 renderizarProductos();
 renderizarCarrito();
+
 
