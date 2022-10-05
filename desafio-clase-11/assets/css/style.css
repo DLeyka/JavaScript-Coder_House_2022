@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+};
+
+.shopContentCards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.cards {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 200px;
+    text-align: left;
+    font-family: 'Baloo 2', cursive;
+    border-radius: 17px;
+    color: #DE9ACF;
+    
+}
+
+.cards > img {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.price {
+    font-size: 21px;
+}
+
+.addShop {
+    padding: 0 10px;
+    border: 0;
+    background-color: #DE9ACF;
+    font-size: 22px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.addShop :hover {
+    background-color: #DA79C5;
+}
