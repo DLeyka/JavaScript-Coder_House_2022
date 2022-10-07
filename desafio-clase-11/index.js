@@ -98,7 +98,7 @@ productos.forEach((product) => {
             nombre: product.nombre,
             precio: product.precio,
         });
-        Swal.fire({ position: 'top-end', 
+        add.Swal.fire({ position: 'top-end', 
         icon: 'success', 
         title: 'Se ha agregado al carrito', 
         showConfirmButton: false, 
