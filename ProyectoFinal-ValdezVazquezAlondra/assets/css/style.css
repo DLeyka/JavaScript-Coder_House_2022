@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+};
+
+.navbarCont {
+    background-color: #DA79C5;
+};
+
+.shopContentCards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icono {
+    width: 25px;
+}
+
+.verCarrito {
+    border: 0;
+    background: none;
+
+}
+
+.cards {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-top: 60px;
+    max-width: 200px;
+    text-align: left;
+    font-family: 'Baloo 2', cursive;
+    border-radius: 17px;
+    color: #DE9ACF;
+    
+}
+
+.cards > img {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.price {
+    font-size: 21px;
+}
+
+.addShop {
+    padding: 0 10px;
+    border: 0;
+    background-color: #DE9ACF;
+    font-size: 22px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.addShop:hover {
+    background-color: #DA79C5;
+}
+
+.modalConteiner {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 65px 10%;
+    max-height: 88vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    scrollbar-color: none;
+    border-radius: 17px;
+}
+
+.modalConteiner::-webkit-scrollbar {
+    display: none;
+}
+
+.modalHeader {
+    display: flex;
+    padding: 10px 40px;
+    justify-content: space-between;
+    background-color: #DE9ACF;
+    color: white;
+    width: 100%;
+}
+
+.modalHeaderTitle {
+    justify-self: start;
+}
+
+.modalHeaderButton {
+    cursor: pointer;
+    padding: 0 21px;
+    font-family: 'Baloo 2', cursive;
+    font-size: 30px;
+    border: 0;
+    border-radius: 50px;
+    color: #DE9ACF;
+    background-color: white;
+}
+
+.modalHeaderButton:hover {
+    background-color: #DA79C5;
+    color: white;
+}
+
+.modalConteiner > .modalCarritoContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+    font-family: 'Baloo 2', cursive;
+    color: #DE9ACF;
+}
+
+.modalConteiner > div > img {
+    height: 120px;
+    width: 120px;
+}
+
+.totalContent {
+    font-family: 'Baloo 2',cursive;
+    font-weight: 700;
+    font-size: 30px;
+    color: #DA79C5;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.deleteProduct {
+    font-family: 'Baloo 2', cursive;
+    font-size: 40px;
+    padding: 0px 20px;
+    border: 0;
+    background-color: #DE9ACF;
+    color: white;
+    border-radius: 100%;
+}
+
+.deleteProduct:hover {
+    background-color: #f9635c;
+}
+
+.cantidad {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+    font-size: 20px;
+    color: #DE9ACF;
+}
+
+.cantidadCarrito {
+    background-color: #f9635c;
+    color: white;
+    border-radius: 100%;
+    font-size: 12px;
+    padding: 4px 8px;
+    top: 37px;
+    right: 14px;
+    position: absolute;
+    display: none;
+}
+
+.carrito {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    background-color: #DE9ACF;
+    border-radius: 17px;
+}
+
+.footer {
+    margin-top: 60px;
+    background-color: #D6B9DF;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.letrasFooter {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+    color: white;  
+}
+
+.restar {
+    border-radius: 100%;
+    padding: 0px 13px;
+    border: 0;
+    font-size: 25px;
+    color: white;
+    background-color: #DE9ACF;
+}
+
+.restar:hover {
+    background-color: #f9635c;
+}
+
+.sumar {
+    border-radius: 100%;
+    padding: 0px 12px;
+    border: 0;
+    font-size: 25px;
+    color: white;
+    background-color: #DE9ACF;
+}
+
+.sumar:hover {
+    background-color: #77dd77;
+}
+
+.titulo {
+    text-shadow: 9px 8px 25px rgba(0, 0, 0, 0.122);
+    font-family: 'Baloo 2', cursive;
+    font-weight: 900;
+    font-size: 75px;
+    width: 500px;
+    position: absolute;
+    color: white;
+    margin: 150px 250px 0;
+}

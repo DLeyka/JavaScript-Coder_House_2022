@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "nombre": "Conedwich",
+        "precio": 150,
+        "img": "./assets/img/img1.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Animal donuts",
+        "precio": 50,
+        "img": "./assets/img/img2.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 3,
+        "nombre": "Coneke",
+        "precio": 80,
+        "img": "./assets/img/img3.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "nombre": "Comi-Oso",
+        "precio": 250,
+        "img": "./assets/img/img4.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 5,
+        "nombre": "Animatel",
+        "precio": 130,
+        "img": "./assets/img/img5.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 6,
+        "nombre": "Corneconio",
+        "precio": 75,
+        "img": "./assets/img/img6.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 7,
+        "nombre": "SopOso",
+        "precio": 300,
+        "img": "./assets/img/img7.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 8,
+        "nombre": "Malte-Toons",
+        "precio": 175,
+        "img": "./assets/img/img8.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 9,
+        "nombre": "Pokelate",
+        "precio": 180,
+        "img": "./assets/img/img9.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 10,
+        "nombre": "Normi-teada",
+        "precio": 150,
+        "img": "./assets/img/img10.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 11,
+        "nombre": "Delis-Oso",
+        "precio": 130,
+        "img": "./assets/img/img11.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 12,
+        "nombre": "CatBurger",
+        "precio": 180,
+        "img": "./assets/img/img12.jpg",
+        "cantidad": 1
+    }   
+]
